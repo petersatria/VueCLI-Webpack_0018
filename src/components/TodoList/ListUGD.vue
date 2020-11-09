@@ -11,6 +11,13 @@
          single-line
          hide-details
        ></v-text-field>
+       <v-select
+         v-model="search"
+         :items="['Penting', 'Biasa', 'Tidak penting']"
+         label="Priority"
+         hide-details
+         single-line
+       ></v-select>
        <v-spacer></v-spacer>
        <v-btn color="success" dark @click="dialog = true">
          Tambah
